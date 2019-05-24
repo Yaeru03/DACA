@@ -1,0 +1,23 @@
+<div>
+    <div class="row">
+        <div class="col-12 col-lg-3" style="border-right: 1px solid rgba(0, 0, 0, 0.1); padding: 0px; height: 100%; max-height: 100vh; overflow: auto">
+            <div class="d-lg-none d-flex py-2 px-4 align-items-center text-body sidebar-collapsed" (click)="sidebarCollapsed = !sidebarCollapsed" role="button">
+                <span class="mr-auto">Menu</span>
+                <button class="btn btn-link p-0" aria-controls="doc-nav" [attr.aria-expanded]="!sidebarCollapsed" aria-label="Toggle documentation navigation">
+                    <svg class="align-middle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
+                        <title>Menu</title>
+                        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                            d="M4 7h22M4 15h22M4 23h22"></path>
+                    </svg>
+                </button>
+            </div>
+            <app-side-bar id="doc-nav" *ngIf="needsSideBar()" [ngbCollapse]="sidebarCollapsed" class="d-lg-block my-3 collpase sidebar" style="padding-left: 30px !important; margin:0px !important; height:100%; overflow: auto"></app-side-bar>
+            <app-observation id="doc-nav" *ngIf="router.url === '/Video'" [ngbCollapse]="sidebarCollapsed" class="d-lg-block my-3 collpase sidebar" style="margin:0px !important; padding: 0px !important; height:100%; overflow: auto"></app-observation>
+        </div>
+
+        <div class="col-12 col-lg-9 container-fluid" style="background-color: rgba(233, 233, 233, 0.658); height: 100%; max-height: 100vh; padding: 30px; overflow: auto">
+            <router-outlet></router-outlet>
+            <!-- <app-canciones></app-canciones> -->
+        </div>
+    </div>
+</div>

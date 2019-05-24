@@ -1,0 +1,71 @@
+<div class="buttons">
+    <input (keydown.ArrowUp)="onUp($event)" (keydown.ArrowDown)="onDown($event)" (keydown.ArrowLeft)="onLeft($event)" (keydown.ArrowRight)="onRight($event)">
+    <input (click)="onSonreir($event)" type="button" value="Sonreir"> <br>
+    <input (click)="onTriste($event)" type="button" value="Triste"> <br>
+    <input (click)="onSerio($event)" type="button" value="Serio"> <br>
+    <input (click)="onCuadrado($event)" type="button" value="Cuadrado"> <br>
+    <input (click)="onTriangulo($event)" type="button" value="Triangulo"> <br>
+    <input (click)="onRectangulo($event)" type="button" value="Rectangulo"> <br>
+    <input (click)="onCirculo($event)" type="button" value="Circulo"> <br>
+    <input (click)="onHello2($event)" type="button" value="Hello 2"> <br>
+    <hr>
+    <!-- <iframe src="https://192.168.1.73:3700/record" frameborder="3"></iframe> -->
+
+    <div class="modal-body row">
+        <div class="col-sm-12 text-center">
+            <button class="button-circle button-Y" (click)="onWakeUp($event)">Y</button>
+        </div>
+    </div>
+    <div class="modal-body row">
+        <div class="col-sm-6  text-right">
+            <button class="button-circle button-X" (click)="onSleep($event)">X</button>
+        </div>
+        <div class=" col-sm-6 text-left ">
+            <button class="button-circle button-A " (click)="onHello($event) ">A</button>
+        </div>
+    </div>
+    <div class="modal-body row ">
+        <div class="col-sm-12 text-center ">
+            <button class="button-circle button-B " (click)="onHappy($event) ">B</button>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row ">
+        <div class="col-sm-12 text-center ">
+            <button class="button-axes axes-U " (click)="onUp($event) ">
+                <i class="arrow arrow-up "></i>
+            </button>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-6 text-right ">
+            <button class="button-axes axes-L " (click)="onLeft($event) ">
+                <i class="arrow arrow-left "></i>
+            </button>
+        </div>
+        <div class="col-sm-6 text-left ">
+            <button class="button-axes axes-R " (click)="onRight($event) ">
+                <i class="arrow arrow-right "></i>
+            </button>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-12 text-center ">
+            <button class="button-axes axes-D " (click)="onDown($event) ">
+                <i class="arrow arrow-down "></i>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- 
+    <hr>
+    <button class="button-bar button-BL ">BL</button>
+    <button class="button-bar button-BR ">BR</button>
+    <hr>
+    <button class="button-bar-mini button-SELECT ">SELECT</button>
+    <button class="button-bar-mini button-START ">START</button>
+    <hr>
+    <div class="status ">NOT CONNECTED</div> -->
+</div>
