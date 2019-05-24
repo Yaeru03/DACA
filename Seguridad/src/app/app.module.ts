@@ -19,6 +19,7 @@ import { ControlComponent } from './menu/control/control.component';
 import { ObservationComponent } from './menu/observation/observation.component';
 import { ControlRemotoService } from './servicios/control-remoto.service';
 import { IdentificacionComponent } from './contenedor/identificacion/identificacion.component';
+import { RegistroObservacionComponent } from './contenedor/registro-observacion/registro-observacion.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { IdentificacionComponent } from './contenedor/identificacion/identificac
     LogInComponent,
     ControlComponent,
     ObservationComponent,
-    IdentificacionComponent
+    IdentificacionComponent,
+    RegistroObservacionComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +48,7 @@ import { IdentificacionComponent } from './contenedor/identificacion/identificac
       { path: 'Control', component: ControlComponent },
       { path: 'SideBar', component: SideBarComponent },
       { path: 'Anexo1', component: IdentificacionComponent },
+      { path: 'Anexo2', component: RegistroObservacionComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' }
     ]),
     FormsModule,
