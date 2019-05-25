@@ -20,6 +20,7 @@ import { ObservationComponent } from './menu/observation/observation.component';
 import { ControlRemotoService } from './servicios/control-remoto.service';
 import { IdentificacionComponent } from './contenedor/identificacion/identificacion.component';
 import { RegistroObservacionComponent } from './contenedor/registro-observacion/registro-observacion.component';
+import { GuiaPVictimaComponent } from './contenedor/guia-pvictima/guia-pvictima.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { RegistroObservacionComponent } from './contenedor/registro-observacion/
     ControlComponent,
     ObservationComponent,
     IdentificacionComponent,
-    RegistroObservacionComponent
+    RegistroObservacionComponent,
+    GuiaPVictimaComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +51,7 @@ import { RegistroObservacionComponent } from './contenedor/registro-observacion/
       { path: 'SideBar', component: SideBarComponent },
       { path: 'Anexo1', component: IdentificacionComponent },
       { path: 'Anexo2', component: RegistroObservacionComponent },
+      { path: 'Anexo3', component: GuiaPVictimaComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' }
     ]),
     FormsModule,
