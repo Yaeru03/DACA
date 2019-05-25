@@ -10,7 +10,6 @@ import { SideBarComponent } from './menu/side-bar/side-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContainerComponent } from './contenedor/container/container.component';
 import { InfoComponent } from './contenedor/info/info.component';
-import { SesionesComponent } from './contenedor/sesiones/sesiones.component';
 import { ServeComponent } from './serve/serve.component';
 import { RegistroComponent } from './autentificacion/registro/registro.component';
 import { FormsModule, ReactiveFormsModule } from '../../node_modules/@angular/forms';
@@ -26,6 +25,7 @@ import { GuiaFamPVictimaComponent } from './contenedor/guia-fam-pvictima/guia-fa
 import { GuiaFamPAgresorComponent } from './contenedor/guia-fam-pagresor/guia-fam-pagresor.component';
 import { GuiaPAgresorComponent } from './contenedor/guia-pagresor/guia-pagresor.component';
 import { ReporteIncidenciasComponent } from './contenedor/reporte-incidencias/reporte-incidencias.component';
+import { SobreNosotrosComponent } from './contenedor/sobre-nosotros/sobre-nosotros.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,6 @@ import { ReporteIncidenciasComponent } from './contenedor/reporte-incidencias/re
     SideBarComponent,
     ContainerComponent,
     InfoComponent,
-    SesionesComponent,
     ServeComponent,
     RegistroComponent,
     LogInComponent,
@@ -47,14 +46,14 @@ import { ReporteIncidenciasComponent } from './contenedor/reporte-incidencias/re
     GuiaFamPVictimaComponent,
     GuiaFamPAgresorComponent,
     GuiaPAgresorComponent,
-    ReporteIncidenciasComponent
+    ReporteIncidenciasComponent,
+    SobreNosotrosComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     RouterModule.forRoot([
       // { path: '', component: InfoComponent },
-      { path: 'Sesiones', component: SesionesComponent },
       { path: 'Registro', component: RegistroComponent },
       { path: 'LogIn', component: LogInComponent },
       { path: 'Control', component: ControlComponent },
@@ -67,6 +66,7 @@ import { ReporteIncidenciasComponent } from './contenedor/reporte-incidencias/re
       { path: 'Anexo5B', component: GuiaFamPAgresorComponent },
       { path: 'Anexo6', component: GuiaPAgresorComponent },
       { path: 'Anexo7', component: ReporteIncidenciasComponent },
+      { path: 'Contacto', component: SobreNosotrosComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' }
     ]),
     FormsModule,
