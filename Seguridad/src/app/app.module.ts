@@ -21,6 +21,11 @@ import { ControlRemotoService } from './servicios/control-remoto.service';
 import { IdentificacionComponent } from './contenedor/identificacion/identificacion.component';
 import { RegistroObservacionComponent } from './contenedor/registro-observacion/registro-observacion.component';
 import { GuiaPVictimaComponent } from './contenedor/guia-pvictima/guia-pvictima.component';
+import { GuiaObservadoresComponent } from './contenedor/guia-observadores/guia-observadores.component';
+import { GuiaFamPVictimaComponent } from './contenedor/guia-fam-pvictima/guia-fam-pvictima.component';
+import { GuiaFamPAgresorComponent } from './contenedor/guia-fam-pagresor/guia-fam-pagresor.component';
+import { GuiaPAgresorComponent } from './contenedor/guia-pagresor/guia-pagresor.component';
+import { ReporteIncidenciasComponent } from './contenedor/reporte-incidencias/reporte-incidencias.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +42,12 @@ import { GuiaPVictimaComponent } from './contenedor/guia-pvictima/guia-pvictima.
     ObservationComponent,
     IdentificacionComponent,
     RegistroObservacionComponent,
-    GuiaPVictimaComponent
+    GuiaPVictimaComponent,
+    GuiaObservadoresComponent,
+    GuiaFamPVictimaComponent,
+    GuiaFamPAgresorComponent,
+    GuiaPAgresorComponent,
+    ReporteIncidenciasComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +62,11 @@ import { GuiaPVictimaComponent } from './contenedor/guia-pvictima/guia-pvictima.
       { path: 'Anexo1', component: IdentificacionComponent },
       { path: 'Anexo2', component: RegistroObservacionComponent },
       { path: 'Anexo3', component: GuiaPVictimaComponent },
+      { path: 'Anexo4', component: GuiaObservadoresComponent },
+      { path: 'Anexo5A', component: GuiaFamPVictimaComponent },
+      { path: 'Anexo5B', component: GuiaFamPAgresorComponent },
+      { path: 'Anexo6', component: GuiaPAgresorComponent },
+      { path: 'Anexo7', component: ReporteIncidenciasComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' }
     ]),
     FormsModule,
