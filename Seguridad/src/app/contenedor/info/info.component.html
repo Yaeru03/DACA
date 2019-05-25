@@ -1,53 +1,30 @@
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script>
-    var current = 0;
-    var imagenes = new Array();
+<div id="page">
+    <section>
+        <input type="radio" name="slider-select-element" id="element1" checked="checked" />
+        <input type="radio" name="slider-select-element" id="element2" />
+        <input type="radio" name="slider-select-element" id="element3" />
 
-    $(document).ready(function() {
-        var numImages = 6;
-        if (numImages <= 3) {
-            $('.right-arrow').css('display', 'none');
-            $('.left-arrow').css('display', 'none');
-        }
+        <div id="slider-container">
+            <div id="slider-box">
+                <div class="slider-element">
+                    <img src="/assets/1.jpg" width="820px" height="400">
+                </div>
+                <div class="slider-element">
+                    <img src="/assets/2.jpg" width="820px" height="400">
+                </div>
+                <div class="slider-element">
+                    <img src="/assets/4.jpg" width="820px" height="400">
+                </div>
+            </div>
+        </div>
 
-        $('.left-arrow').on('click', function() {
-            if (current > 0) {
-                current = current - 1;
-            } else {
-                current = numImages - 3;
-            }
-
-            $(".carrusel").animate({
-                "left": -($('#product_' + current).position().left)
-            }, 600);
-
-            return false;
-        });
-
-        $('.left-arrow').on('hover', function() {
-            $(this).css('opacity', '0.5');
-        }, function() {
-            $(this).css('opacity', '1');
-        });
-
-        $('.right-arrow').on('hover', function() {
-            $(this).css('opacity', '0.5');
-        }, function() {
-            $(this).css('opacity', '1');
-        });
-
-        $('.right-arrow').on('click', function() {
-            if (numImages > current + 3) {
-                current = current + 1;
-            } else {
-                current = 0;
-            }
-
-            $(".carrusel").animate({
-                "left": -($('#product_' + current).position().left)
-            }, 600);
-
-            return false;
-        });
-    });
-</script>
+        <div id="slider-arrows">
+            <label for="element1"></label>
+            <label for="element2"></label>
+            <label for="element3"></label>
+        </div>
+    </section>
+</div>
+<div>
+    <img src="/assets/logo.png" width="800px" height="300" allign="center">
+</div>

@@ -67,6 +67,7 @@ import { SobreNosotrosComponent } from './contenedor/sobre-nosotros/sobre-nosotr
       { path: 'Anexo6', component: GuiaPAgresorComponent },
       { path: 'Anexo7', component: ReporteIncidenciasComponent },
       { path: 'Contacto', component: SobreNosotrosComponent },
+      { path: 'Info', component: InfoComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' }
     ]),
     FormsModule,
