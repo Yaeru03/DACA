@@ -1,2 +1,2 @@
 # DACA
-Seguridad Informática
+Seguridad Escolar
