@@ -1,37 +1,53 @@
-<div *ngIf="robotInfo.battery>=90 && robotInfo.battery<=100 " class="card text-white bg-success mb-3" style="max-width: 20rem;">
-    <div class="card-header">Estado de batería</div>
-    <div class="card-body">
-        <p class="mb-0"><img src="/assets/bat4.png" width="5%" height="5%"> ¡Batería llena!</p>
-    </div>
-</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+    var current = 0;
+    var imagenes = new Array();
 
-<div *ngIf="robotInfo.battery>=50 && robotInfo.battery<90" class="card text-white bg-primary mb-3 text-dark" style="max-width: 20rem">
-    <div class="card-header" style="background-color: rgb(253, 255, 139)">Estado de batería</div>
-    <div class="card-body" style="background-color: rgb(251, 255, 0)">
-        <p class="mb-0"><img src="/assets/bat3.png" width="5%" height="5%"> ¡Hay más de la mitad de batería!</p>
-    </div>
-</div>
+    $(document).ready(function() {
+        var numImages = 6;
+        if (numImages <= 3) {
+            $('.right-arrow').css('display', 'none');
+            $('.left-arrow').css('display', 'none');
+        }
 
-<div *ngIf="robotInfo.battery>=35 && robotInfo.battery<50" class="card text-white bg-warning mb-3" style="max-width: 20rem;">
-    <div class="card-header">Estado de batería</div>
-    <div class="card-body">
-        <p class="mb-0"><img src="/assets/bat2.png" width="5%" height="5%"> ¡Queda menos de la mitad de batería!</p>
-    </div>
-</div>
+        $('.left-arrow').on('click', function() {
+            if (current > 0) {
+                current = current - 1;
+            } else {
+                current = numImages - 3;
+            }
 
-<div *ngIf="robotInfo.battery>=0 && robotInfo.battery<35" class="card text-white bg-danger mb-3" style="max-width: 20rem;">
-    <div class="card-header">Estado de batería</div>
-    <div class="card-body">
-        <p class="mb-0"><img src="/assets/bat1.png" width="5%" height="5%"> ¡Queda poca batería!</p>
-    </div>
-</div>
+            $(".carrusel").animate({
+                "left": -($('#product_' + current).position().left)
+            }, 600);
 
-<div class="card text-white bg-info mb-3" style="max-width: 20rem;">
-    <div class="card-header">Características</div>
-    <div class="card-body">
-        <h4 class="card-title">Número de serie</h4>
-        <p class="card-text">SS-2eh8S</p>
-        <h4 class="card-title">Modelo</h4>
-        <p class="card-text">MM001</p>
-    </div>
-</div>
+            return false;
+        });
+
+        $('.left-arrow').on('hover', function() {
+            $(this).css('opacity', '0.5');
+        }, function() {
+            $(this).css('opacity', '1');
+        });
+
+        $('.right-arrow').on('hover', function() {
+            $(this).css('opacity', '0.5');
+        }, function() {
+            $(this).css('opacity', '1');
+        });
+
+        $('.right-arrow').on('click', function() {
+            if (numImages > current + 3) {
+                current = current + 1;
+            } else {
+                current = 0;
+            }
+
+            $(".carrusel").animate({
+                "left": -($('#product_' + current).position().left)
+            }, 600);
+
+            return false;
+        });
+    });
+</script>
