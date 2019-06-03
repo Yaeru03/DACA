@@ -1,58 +1,164 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>conocenos</title>
+  <title>Inicio</title>
+  <style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    input[name="slider-select-element"] {
+        display: none;
+    }
+
+    #slider-arrows {
+        margin: -10% auto 0 auto;
+        width: 80%;
+    }
+
+    #slider-box {
+        height: 100%;
+        width: 300%;
+    }
+
+    #slider-container {
+        height: 20%;
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: left;
+        width: 80%;
+    }
+
+    .element-blue,
+    .element-green,
+    .element-red {
+        min-height: 400px;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .element-blue {
+        background: blue;
+    }
+
+    .element-green {
+        background: green;
+    }
+
+    .element-red {
+        background: red;
+    }
+
+    .slider-element {
+        float: left;
+        width: 33.333%;
+    }
+
+    #element1:checked~#slider-arrows label:nth-child(2),
+    #element2:checked~#slider-arrows label:nth-child(3),
+    #element3:checked~#slider-arrows label:nth-child(1) {
+        display: block;
+        float: right;
+    }
+
+    #element1:checked~#slider-arrows label:nth-child(3),
+    #element2:checked~#slider-arrows label:nth-child(1),
+    #element3:checked~#slider-arrows label:nth-child(2) {
+        display: block;
+        float: left;
+    }
+
+    #element1:checked~#slider-arrows label:nth-child(2):before,
+    #element2:checked~#slider-arrows label:nth-child(3):before,
+    #element3:checked~#slider-arrows label:nth-child(1):before {
+        color: black;
+        content: "\f054";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: antialiased;
+    }
+
+    #element1:checked~#slider-arrows label:nth-child(3):before,
+    #element2:checked~#slider-arrows label:nth-child(1):before,
+    #element3:checked~#slider-arrows label:nth-child(2):before {
+        color: black;
+        content: "\f053";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: antialiased;
+    }
+
+    #element1:checked~#slider-container #slider-box {
+        margin-left: 0;
+    }
+
+    #element2:checked~#slider-container #slider-box {
+        margin-left: -100%;
+    }
+
+    #element3:checked~#slider-container #slider-box {
+        margin-left: -200%;
+    }
+
+    #slider-arrows label {
+        color: transparent;
+        cursor: pointer;
+        display: none;
+        font-size: 2rem;
+        height: 20px;
+        width: 20px;
+    }
+
+    #slider-box {
+        -webkit-transition: all 0.75s ease;
+        -moz-transition: all 0.75s ease;
+        -ms-transition: all 0.75s ease;
+        -o-transition: all 0.75s ease;
+        transition: all 0.75s ease;
+    }
+  </style>
 </head>
+
 <body>
+<div id="page">
+    <section>
+        <input type="radio" name="slider-select-element" id="element1" checked="checked" />
+        <input type="radio" name="slider-select-element" id="element2" />
+        <input type="radio" name="slider-select-element" id="element3" />
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
+        <div id="slider-container">
+            <div id="slider-box">
+                <div class="slider-element">
+                    <img src="1.jpg" width="820px" height="400">
+                </div>
+                <div class="slider-element">
+                    <img src="2.jpg" width="820px" height="400">
+                </div>
+                <div class="slider-element">
+                    <img src="4.jpg" width="820px" height="400">
+                </div>
+            </div>
+        </div>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 5</div>
-    <img src="carrusel/1.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 5</div>
-    <img src="carrusel/2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 5</div>
-    <img src="carrusel/3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <img src="carrusel/4.jpg" style="width:100%">
-    <div class="text">Caption Four</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 5</div>
-    <img src="carrusel/5.jpg" style="width:100%">
-    <div class="text">Caption Five</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div id="slider-arrows">
+            <label for="element1"></label>
+            <label for="element2"></label>
+            <label for="element3"></label>
+        </div>
+    </section>
 </div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
+<div>
+    <img src="logo.png" width="800px" height="300" allign="center">
 </div>
 </body>
 </html>
