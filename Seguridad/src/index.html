@@ -1,17 +1,107 @@
-<!doctype html>
-<html lang="en">
-
+﻿
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Seguridad Escolar</title>
-    <base href="/">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="img/landing/logo.jpg">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="CbC23LwJ0YcWcwyaTt3HwCQLldQtQ6magMpnDwkW">
+
+    <title>SEGE</title>
+
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
 </head>
+<body class="auth">
+    <div id="app">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
 
-<body>
-    <app-root></app-root>
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Branding Image -->
+                    <a class="navbar-brand">
+                        Secretaría de Educación de Gobierno del Estado
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav">
+                        &nbsp;
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Authentication Links -->
+                            <li><a href="login.html">Iniciar Sesión</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default auth-panel">
+                
+
+                <div class="panel-body">
+                    <form class="form-horizontal" method="POST" action="">
+                        <input type="hidden" name="_token" value="CbC23LwJ0YcWcwyaTt3HwCQLldQtQ6magMpnDwkW">
+
+                        <img src="img/landing/logo.png" alt="">
+                        <br><br>
+
+                        <div class="form-group">
+                            <label for="email" class="col-md-12">Dirección de correo electrónico</label>
+
+                            <div class="col-md-6 col-md-offset-3">
+                                <input id="correo" type="email" class="form-control border-input" name="correo" value="" required autofocus>
+
+                                                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="col-md-12">Contraseña</label>
+
+                            <div class="col-md-6 col-md-offset-3">
+                                <input id="pass" type="password" class="form-control border-input" name="pass" required>
+
+                                                            </div>
+                        </div>
+
+                        
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-3">
+                                <button type="submit" class="btn auth-btn btn-fill">
+                                    Iniciar sesión
+                                </button><br><br>
+
+                                <a class="btn btn-fill btn-link auth-btn" href="reset.html">
+                                    ¿Olvidaste tu contraseña?
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <!-- Scripts -->
 </body>
-
 </html>
