@@ -35,46 +35,50 @@ $("#datepicker").datepicker();
 });
 </script>
 <body>
-<p>Denuncia No.</p>
-<h3>GUÍA PARA LA ENTREVISTA CON EL PRESUNTO(A) AGRESOR(A) O AGRESORES(AS) </h3>
-<p>Debe analizarse la conveniencia de realizar una entrevista directa con el presunto agresor(a) (es) y en ese caso recoger información sobre los aspectos contemplados en este Anexo, evitando preguntas directas. </p>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					GUÍA PARA LA ENTREVISTA CON EL PRESUNTO(A) AGRESOR(A) O AGRESORES(AS) <br>
+				</span>
+<div class="wrap-input100 validate-input bg1" >Debe analizarse la conveniencia de realizar una entrevista directa con el presunto agresor(a) (es) y en ese caso recoger información sobre los aspectos contemplados en este Anexo, evitando preguntas directas. </div>
 <ul>
-  <li>Debe existir confidencialidad respecto a las fuentes informativas que han producido la entrevista, sobre todo si la fuente es la víctima.></li>
-  <li>Como los agresores suelen desmentir la acusación que se les atribuye, no bastará sólo con preguntarle a él sino que debemos indagar por otros medios para esclarecer los hechos.</li>
-  <li>A pesar de ello, debemos hablar con él, mostrarle nuestra disposición para ayudarle en todo lo éticamente posible e indicarle que, en caso de ser culpable, deberá asumir su responsabilidad.</li>
-  <li>Una característica general de los agresores suele ser la incapacidad para ponerse en el lugar de la otra persona, no creen que sus actos puedan repercutir en la otra persona haciéndole daño.</li>
-  <li>Debemos averiguar si realmente se está dando la situación de molestia o si responde a otras cuestiones.</li>
-  <li>Es aconsejable en la entrevista utilizar términos que las personas involucradas comprendan.</li>
-  <li>Nunca se realizarán juicios de valor.</li>
+  <li class="label-input100">Debe existir confidencialidad respecto a las fuentes informativas que han producido la entrevista, sobre todo si la fuente es la víctima.></li>
+  <li class="label-input100">Como los agresores suelen desmentir la acusación que se les atribuye, no bastará sólo con preguntarle a él sino que debemos indagar por otros medios para esclarecer los hechos.</li>
+  <li class="label-input100">A pesar de ello, debemos hablar con él, mostrarle nuestra disposición para ayudarle en todo lo éticamente posible e indicarle que, en caso de ser culpable, deberá asumir su responsabilidad.</li>
+  <li class="label-input100">Una característica general de los agresores suele ser la incapacidad para ponerse en el lugar de la otra persona, no creen que sus actos puedan repercutir en la otra persona haciéndole daño.</li>
+  <li class="label-input100">Debemos averiguar si realmente se está dando la situación de molestia o si responde a otras cuestiones.</li>
+  <li class="label-input100">Es aconsejable en la entrevista utilizar términos que las personas involucradas comprendan.</li>
+  <li class="label-input100">Nunca se realizarán juicios de valor.</li>
 </ul>
-<h4><strong>Datos del(los) presunto(s) agresor(es)</strong></h4>
+<h4 ><strong>Datos del(los) presunto(s) agresor(es)</strong></h4>
 <form id="form3" name="form3" method="post" action="">
-  <p>
-    <label for="Nombre2">Nombre(s) y apellidos: </label>
-    <input name="Nombre2" type="text" id="Nombre2" size="50" maxlength="50" />
-  </p>
-  <p>
-    <label for="Edad2">Edad:</label>
-    <input name="Edad2" type="text" id="Edad2" size="3" maxlength="3" />
-  </p>
-  <p>
-    <label for="Sexo2">Sexo:</label>
-    <input name="Sexo2" type="text" id="Sexo2" size="15" maxlength="15" />
-  </p>
-  <p> Mayor de edad:
-    <label>
-      <input type="radio" name="Mayores de edad" value="Si" id="Mayoresdeedad_2" />
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Nombre2">Nombre(s) y apellidos: </label>
+    <input class="input100" name="Nombre2" type="text" id="Nombre2" size="50" maxlength="50" />
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Edad2">Edad:</label>
+    <input class="input100" name="Edad2" type="text" id="Edad2" size="3" maxlength="3" />
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Sexo2">Sexo:</label>
+    <input class="input100" name="Sexo2" type="text" id="Sexo2" size="15" maxlength="15" />
+  </div>
+  <div class="wrap-input100 validate-input bg1" > Mayor de edad:
+    <label class="label-input100">
+      <input class="input100" type="radio" name="Mayores de edad" value="Si" id="Mayoresdeedad_2" />
       Si</label>
-    <label>
-      <input type="radio" name="Mayores de edad" value="No" id="Mayoresdeedad_3" />
+    <label class="label-input100">
+      <input class="input100" type="radio" name="Mayores de edad" value="No" id="Mayoresdeedad_3" />
       No</label>
-  </p>
-  <p>
-    <label for="Tel5">Telefono:</label>
-    <input name="Tel4" type="text" id="Tel5" size="20" maxlength="20" />
-  </p>
-  <p>
-    <label for="Modalidad">Modalidad</label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Tel5">Telefono:</label>
+    <input class="input100" name="Tel4" type="text" id="Tel5" size="20" maxlength="20" />
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Modalidad">Modalidad</label>
     <select name="Modalidad2" id="Modalidad">
       <option>Alumnado</option>
       <option>Docente</option>
@@ -82,102 +86,102 @@ $("#datepicker").datepicker();
       <option>Directivo</option>
       <option>Padre, Madre y/o Tutor(a)</option>
     </select>
-    <label for="Otro">Otro:</label>
-    <input name="Otro2" type="text" id="Otro" size="20" maxlength="20" />
-  </p>
-  <p><strong><em>*En caso de ser alumno(a)</em></strong></p>
-  <p>
-    <label for="Grado">Grado:</label>
-    <input name="Grado2" type="text" id="Grado" size="2" maxlength="2" />
-  </p>
-  <p>
-    <label for="Turno">Turno:</label>
+    <label class="label-input100" for="Otro">Otro:</label>
+    <input class="input100" name="Otro2" type="text" id="Otro" size="20" maxlength="20" />
+  </div>
+  <div class="wrap-input100 validate-input bg1" ><strong><em>*En caso de ser alumno(a)</em></strong></div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Grado">Grado:</label>
+    <input class="input100" name="Grado2" type="text" id="Grado" size="2" maxlength="2" />
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Turno">Turno:</label>
     <select name="Turno2" id="Turno">
       <option>Matutino</option>
       <option>Vespertino</option>
     </select>
-  </p>
-  <p>
-    <label for="NombreTutor">Nombre del Padre, Madre y/o Tutor(a):</label>
-    <input name="NombreTutor2" type="text" id="NombreTutor" size="50" maxlength="50" />
-  </p>
-  <p>
-    <label for="Tel6">Teléfono:</label>
-    <input name="Tel4" type="text" id="Tel6" size="20" maxlength="20" />
-  </p>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="NombreTutor">Nombre del Padre, Madre y/o Tutor(a):</label>
+    <input class="input100" name="NombreTutor2" type="text" id="NombreTutor" size="50" maxlength="50" />
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Tel6">Teléfono:</label>
+    <input class="input100" name="Tel4" type="text" id="Tel6" size="20" maxlength="20" />
+  </div>
 </form>
 <h4><strong>1. Información referida a los hechos denunciados.</strong></h4>
 <form>
-  <p>
-    <label for="P1">¿Cómo te va en el centro escolar? </label>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P1">¿Cómo te va en el centro escolar? </label>
     <br>
     <textarea name="R1" rows="10" cols="80" id="P1" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P2">¿Cómo te llevas en general con la comunidad educativa? </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P2">¿Cómo te llevas en general con la comunidad educativa? </label>
     <br>
     <textarea name="R2" rows="10" cols="80" id="P2" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P3">¿Consideras que las agresiones entre la comunidad educativa son un problema?</label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P3">¿Consideras que las agresiones entre la comunidad educativa son un problema?</label>
     <br>
     <textarea name="R3" rows="10" cols="80" id="P3" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P4">¿Cuáles son en tu opinión las formas más frecuentes de molestia en este centro escolar?(insultar, poner apodos, burlas, reírse de alguien, ridiculizar, hacer daño físico, hablar mal de alguien, amenazar, chantajear, obligar a hacer cosas, aislar, rechazar, …) </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P4">¿Cuáles son en tu opinión las formas más frecuentes de molestia en este centro escolar?(insultar, poner apodos, burlas, reírse de alguien, ridiculizar, hacer daño físico, hablar mal de alguien, amenazar, chantajear, obligar a hacer cosas, aislar, rechazar, …) </label>
     <br>
     <textarea name="R4" rows="10" cols="80" id="P4" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P5">¿Con qué frecuencia ocurren estas formas de maltrato? </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P5">¿Con qué frecuencia ocurren estas formas de maltrato? </label>
     <br>
     <textarea name="R5" rows="10" cols="80" id="P5" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P6">¿Por qué crees que se molestan unos a otros (únicamente por molestar, por ser más fuertes, por hacer bromas o porque se lo merecen)   </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P6">¿Por qué crees que se molestan unos a otros (únicamente por molestar, por ser más fuertes, por hacer bromas o porque se lo merecen)   </label>
     <br>
     <textarea name="R6" rows="10" cols="80" id="P6" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P7">Me han dicho que el otro día hubo un incidente con……… ¿Qué es lo que  ocurrió?   </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P7">Me han dicho que el otro día hubo un incidente con……… ¿Qué es lo que  ocurrió?   </label>
     <br>
     <textarea name="R7" rows="10" cols="80" id="P7" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P8">¿Cuándo y dónde ha sucedido? (Intentar que haga una descripción).   </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P8">¿Cuándo y dónde ha sucedido? (Intentar que haga una descripción).   </label>
     <br>
     <textarea name="R8" rows="10" cols="80" id="P8" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P9">¿Por qué crees que pasó?   </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P9">¿Por qué crees que pasó?   </label>
     <br>
     <textarea name="R9" rows="10" cols="80" id="P9" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P10">¿Cómo te sientes en esa situación? </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P10">¿Cómo te sientes en esa situación? </label>
     <br>
     <textarea name="R10" rows="10" cols="80" id="P10" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P11">¿Cómo crees que se siente (la presunta víctima)…..? </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P11">¿Cómo crees que se siente (la presunta víctima)…..? </label>
     <br>
     <textarea name="R11" rows="10" cols="80" id="P11" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P12">¿Qué tendría que suceder para que se arregle el problema?</label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P12">¿Qué tendría que suceder para que se arregle el problema?</label>
     <br>
     <textarea name="R12" rows="10" cols="80" id="P12" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P13">¿Qué estás dispuesto a hacer tú para ayudar a la persona que está sufriendo este problema?   </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P13">¿Qué estás dispuesto a hacer tú para ayudar a la persona que está sufriendo este problema?   </label>
     <br>
     <textarea name="R13" rows="10" cols="80" id="P13" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="P14">¿A qué te comprometes?  </label>
+  </div>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="P14">¿A qué te comprometes?  </label>
     <br>
     <textarea name="R14" rows="10" cols="80" id="P14" >Escriba aquí...</textarea>
-  </p>
+  </div>
 </form>
 <h4><strong>2. Informar de las medidas que pueden llegar a aplicarse. </strong></h4>
 <ol type="a">
@@ -190,13 +194,25 @@ $("#datepicker").datepicker();
 </ol>
 <h4><strong>3. Concluir: volver a preguntar sobre la molestia para hacer un resumen: ¿Así que dices que…..? (Parafraseo; vuelve a responder el presunto agresor) </strong></h4>
 <form>
-<p>
-  <label for="Receptor">Nombre del receptor(a) de la molestia:</label>
-  <input name="Rec" type="text" id="Receptor" size="25" maxlength="25" />
-</p>
+<div class="wrap-input100 validate-input bg1" >
+  <label class="label-input100" for="Receptor">Nombre del receptor(a) de la molestia:</label>
+  <input class="input100" name="Rec" type="text" id="Receptor" size="25" maxlength="25" />
+</div>
 
-<p>Fecha:</p>
+<div class="wrap-input100 validate-input bg1" >Fecha:</div>
 <div id="datepicker"></div>
+
+<div class="container-contact100-form-btn">
+	<button class="contact100-form-btn">
+		<span>
+			Enviar
+			<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+		</span>
+	</button>
+</div>
+
 </form>
+</div>
+</div>
 </body>
 </html>
