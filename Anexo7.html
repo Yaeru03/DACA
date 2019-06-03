@@ -3,6 +3,32 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Anexo 7</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
 <link rel="stylesheet" type="text/css" href="online-education/style.css">
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -13,15 +39,21 @@ $("#datepicker").datepicker();
 });
 </script>
 <body>
-<p>Denuncia No.</p>
-<h3>REPORTE DE INCIDENCIAS </h3>
+  <div class="container-contact100">
+    <div class="wrap-contact100">
+      <form class="contact100-form validate-form">
+        <span class="contact100-form-title">
+          REPORTE DE INCIDENCIAS
+        </span>
+
 <form id="form7" name="form7" method="post" action="">
-  <p>
-    <label for="CicloEscolar">Ciclo Escolar: </label>
-    <input name="Ciclo" type="text" id="CicloEscolar" size="15" maxlength="15" />
-  </p>
-  <p>
-    <label for="Origen">Origen de la solicitud: </label>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="CicloEscolar">Ciclo Escolar: </label>
+    <input class="input100" name="Ciclo" type="text" id="CicloEscolar" size="15" maxlength="15" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Origen">Origen de la solicitud: </label>
     <select name="Orig" id="Origen">
       <option>Alumnado</option>
       <option>Docente</option>
@@ -29,93 +61,118 @@ $("#datepicker").datepicker();
       <option>Directivo</option>
       <option>Padre, Madre y/o Tutor(a)</option>
     </select>
-    <label for="Otro">Otro:</label>
-    <input name="Otro" type="text" id="Otro" size="20" maxlength="20" />
-  </p>
-  <p>
-    <label for="EquipoVal">Equipo de valoración (Nombres y Apellidos):</label>
+    <label class="label-input100" for="Otro">Otro:</label>
+    <input class="input100" name="Otro" type="text" id="Otro" size="20" maxlength="20" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="EquipoVal">Equipo de valoración (Nombres y Apellidos):</label>
     <br>
     <textarea name="EV" rows="10" cols="80" id="EquipoVal" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="NivelEducativo">Nivel Educativo: </label>
-    <input name="NivelEducativo" type="text" id="NivelEducativo" size="3" maxlength="3" />
-  </p>
-  <p>
-    <label for="NombreEsc">Nombre de la escuela: </label>
-    <input name="NE" type="text" id="NombreEsc" size="25" maxlength="25" />
-  </p>
-  <p><strong><em>*Denunciante</em></strong></p>
-  <p>
-    <label for="Nombre">Nombre(s) y apellidos: </label>
-    <input name="Nombre" type="text" id="Nombre" size="50" maxlength="50" />
-    <label><input type="radio" name="Anon" value="Anonimo" id="Anon" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="NivelEducativo">Nivel Educativo: </label>
+    <input class="input100" name="NivelEducativo" type="text" id="NivelEducativo" size="3" maxlength="3" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="NombreEsc">Nombre de la escuela: </label>
+    <input name="NE" class="input100" type="text" id="NombreEsc" size="25" maxlength="25" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <strong><em>*Denunciante</em></strong>
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100"  for="Nombre">Nombre(s) y apellidos: </label>
+    <input name="Nombre" class="input100" type="text" id="Nombre" size="50" maxlength="50" />
+    <label class="label-input100"><input type="radio" name="Anon" value="Anonimo" id="Anon" />
     Anónimo</label>
-  </p>
-  <p>
-    <label for="TDen">Tel: </label>
-    <input name="TD" type="text" id="TDen" size="15" maxlength="15" />
-  </p>
-  <p>
-    <label for="CorreoDen">Correo: </label>
-    <input name="CD" type="text" id="CorreoDen" size="30" maxlength="30" />
-  </p>
-  <p><strong><em>*En caso de ser alumno(a)</em></strong></p>
-  <p>
-    <label for="Nombre2">Nombre(s) y apellidos: </label>
-    <input name="Nombre2" type="text" id="Nombre2" size="50" maxlength="50" />
-  </p>
-  <p>
-    <label for="Grado">Grado:</label>
-    <input name="Grado" type="text" id="Grado" size="2" maxlength="2" />
-  </p>
-  <p>
-    <label for="Turno">Turno:</label>
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="TDen">Tel: </label>
+    <input name="TD" type="text" class="input100" id="TDen" size="15" maxlength="15" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="CorreoDen">Correo: </label>
+    <input name="CD" type="text" class="input100" id="CorreoDen" size="30" maxlength="30" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" ><strong><em>*En caso de ser alumno(a)</em></strong>
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Nombre2">Nombre(s) y apellidos: </label>
+    <input name="Nombre2" type="text" class="input100" id="Nombre2" size="50" maxlength="50" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Grado">Grado:</label>
+    <input name="Grado" type="text" class="input100" id="Grado" size="2" maxlength="2" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Turno">Turno:</label>
     <select name="Turno" id="Turno">
       <option>Matutino</option>
       <option>Vespertino</option>
     </select>
-  </p>
-  <p>
-    <label for="NombreTutor">Nombre del Padre, Madre y/o Tutor(a):</label>
-    <input name="NombreTutor" type="text" id="NombreTutor" size="50" maxlength="50" />
-  </p>
-  <p>
-    <label for="Tel3">Teléfono:</label>
-    <input name="Tel3" type="text" id="Tel3" size="20" maxlength="20" />
-  </p>
-  <p>
-    <label for="Correo">Correo: </label>
-    <input name="mail" type="text" id="Correo" size="30" maxlength="30" />
-  </p>
-  <p>Fecha:</p>
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" class="label-input100" for="NombreTutor">Nombre del Padre, Madre y/o Tutor(a):</label>
+    <input name="NombreTutor" type="text" class="input100" id="NombreTutor" size="50" maxlength="50" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Tel3">Teléfono:</label>
+    <input name="Tel3" type="text" class="input100" id="Tel3" size="20" maxlength="20" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Correo">Correo: </label>
+    <input name="mail" type="text" class="input100" id="Correo" size="30" maxlength="30" />
+  </div>
+  <div class="wrap-input100 validate-input bg1" >Fecha:
+  </div>
+
   <div id="datepicker"></div>
-  <p>
-    <label for="C1">BREVE DESCRIPCIÓN DE LOS HECHOS</label>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="C1">BREVE DESCRIPCIÓN DE LOS HECHOS</label>
     <br>
     <textarea name="B1" rows="10" cols="80" id="C1" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="C1">BREVE DESCRIPCIÓN DE LOS HECHOS</label>
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="C1">BREVE DESCRIPCIÓN DE LOS HECHOS</label>
     <br>
     <textarea name="B1" rows="10" cols="80" id="C1" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="C2">CONCLUSIONES</label>
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="C2">CONCLUSIONES</label>
     <br>
     <textarea name="B2" rows="10" cols="80" id="C2" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="C3">ACUERDOS</label>
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="C3">ACUERDOS</label>
     <br>
     <textarea name="B3" rows="10" cols="80" id="C3" >Escriba aquí...</textarea>
-  </p>
-  <p>
-    <label for="Receptor">Nombre del receptor(a) de la molestia:</label>
-    <input name="Rec" type="text" id="Receptor" size="25" maxlength="25" />
-  </p>
+  </div>
 
-  <p>Fecha:</p>
+  <div class="wrap-input100 validate-input bg1" >
+    <label class="label-input100" for="Receptor">Nombre del receptor(a) de la molestia:</label>
+    <input name="Rec" type="text" class="input100" id="Receptor" size="25" maxlength="25" />
+  </div>
+
+  <div class="wrap-input100 validate-input bg1" >Fecha:
+  </div>
+
   <div id="datepicker"></div>
 </form>
 </body>
